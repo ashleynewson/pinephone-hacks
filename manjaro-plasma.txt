@@ -1,0 +1,16 @@
+# Stock Pinephone (Manjaro Plasma) Tips
+
+Undocumented kde superuser with default password (something like 123456 or something like that). Disable that.
+
+Ensure the root password is disabled or under control.
+
+SSH enabled by default. Probably want that disabled if you're not using it or haven't dealt with default passwords.
+
+No iptables rules. Configure?
+
+Uses sddm with autologin. Doesn't seem to work without autologin.
+
+Can use lightdm, but requires some configuration:
+
+- install the lightdm-gtk-greeter (otherwise it won't do anything).
+- install onboard and make sure it's configured to use "phone" layout. Still squashed though. Can configure defaults via etc.

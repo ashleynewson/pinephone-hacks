@@ -1,0 +1,22 @@
+#!/bin/bash
+
+build() {
+	add_module "panel_sitronix_st7703"
+	add_module "uinput"
+
+	add_binary "fbkeyboard"
+	add_file "/usr/share/fonts/TTF/DejaVuSans.ttf"
+
+	add_runscript
+}
+
+help() {
+    cat <<HELPEOF
+This hook spins up fbkeyboard (a framebuffer on-screen keyboard) during
+the boot process. Useful for entering in an encryption passphrase or
+debugging the boot process.
+
+On the side, it also ensures that the display and touch screen are up
+and running early on.
+HELPEOF
+}

@@ -1,0 +1,9 @@
+#!/usr/bin/ash
+
+run_hook() {
+    fbkeyboard -d /dev/input/event2 &
+}
+
+run_cleanuphook() {
+    killall fbkeyboard
+}

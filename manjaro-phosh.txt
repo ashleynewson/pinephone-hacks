@@ -1,0 +1,7 @@
+# Manjaro Phosh
+
+Default user is manjaro. Left as is.
+
+Change manjaro and root passwords.
+
+Consider disabling sshd if not used.
