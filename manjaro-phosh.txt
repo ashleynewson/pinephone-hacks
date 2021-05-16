@@ -5,3 +5,5 @@ Default user is manjaro. Left as is.
 Change manjaro and root passwords.
 
 Consider disabling sshd if not used.
+
+Add a modified /etc/polkit-1/rules.d/org.freedesktop.packagekit.rules (copied from /usr/share/polkit-1/rules.d) with YES changed to AUTH_ADMIN. (Require password to install additional software, even though it's probably fine as is)
